@@ -1,6 +1,14 @@
 package pl.sdacademy.java.basic.exercises.day1;
 
 public class Task8 {
+
+    static int i;
+    static int j;
+
+    {
+        i = 0;
+        j=1;
+    }
     public static void main(String[] args) {
         int maxRange = 10;
         for(int i = 0; i <= maxRange; i++) {
