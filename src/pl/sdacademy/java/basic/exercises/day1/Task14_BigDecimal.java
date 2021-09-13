@@ -24,11 +24,11 @@ public class Task14_BigDecimal {
     private static BigDecimal setAndVerifyAmount() {
         System.out.print("Please insert amount: ");
         BigDecimal amount = input.nextBigDecimal();
-        if(amount.compareTo(new BigDecimal(100)) == -1) {
+        if (amount.compareTo(new BigDecimal(100)) == -1) {
             System.out.println("Amount is too small");
             System.exit(1);
-        } else if(amount.compareTo(new BigDecimal(10_000)) > 0) {
-            System.out.printf("Amount is too big. Default value %.2f was set\n",  DEFAULT_AMOUNT);
+        } else if (amount.compareTo(new BigDecimal(10_000)) > 0) {
+            System.out.printf("Amount is too big. Default value %.2f was set\n", DEFAULT_AMOUNT);
             return DEFAULT_AMOUNT;
         }
         return amount;
@@ -37,11 +37,11 @@ public class Task14_BigDecimal {
     private static int setAndVerifyNumberOfInstallments() {
         System.out.print("Please insert number of installments: ");
         int numberOfInstallments = input.nextInt();
-        if(numberOfInstallments < 6) {
+        if (numberOfInstallments < 6) {
             System.out.println("Number of installments is too small");
             System.exit(1);
-        } else if(numberOfInstallments > 48) {
-            System.out.printf("Number of installments is too big. Default value %.2 was set",  DEFAULT_NUMBER_OF_INSTALLMENTS);
+        } else if (numberOfInstallments > 48) {
+            System.out.printf("Number of installments is too big. Default value %.2 was set", DEFAULT_NUMBER_OF_INSTALLMENTS);
             return DEFAULT_NUMBER_OF_INSTALLMENTS;
         }
         return numberOfInstallments;
@@ -49,9 +49,9 @@ public class Task14_BigDecimal {
 
     private static BigDecimal getSingleAmountOfInstallments(int numberOfInstallments, BigDecimal amount) {
         BigDecimal singleAmountOfInstallment;
-        if(numberOfInstallments >= 6 && numberOfInstallments < 13) {
+        if (numberOfInstallments >= 6 && numberOfInstallments < 13) {
             singleAmountOfInstallment = calculateTotalAmountWithThreshold(FIRST_THRESHOLD, amount).divide(BigDecimal.valueOf(numberOfInstallments), 2, RoundingMode.HALF_UP);
-        } else if(numberOfInstallments >= 13 && numberOfInstallments < 25) {
+        } else if (numberOfInstallments >= 13 && numberOfInstallments < 25) {
             singleAmountOfInstallment = calculateTotalAmountWithThreshold(SECOND_THRESHOLD, amount).divide(BigDecimal.valueOf(numberOfInstallments), 2, RoundingMode.HALF_UP);
         } else {
             singleAmountOfInstallment = calculateTotalAmountWithThreshold(THIRD_THRESHOLD, amount).divide(BigDecimal.valueOf(numberOfInstallments), 2, RoundingMode.HALF_UP);

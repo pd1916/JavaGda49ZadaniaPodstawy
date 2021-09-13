@@ -22,11 +22,11 @@ public class Task14 {
     private static double setAndVerifyAmount() {
         System.out.print("Please insert amount: ");
         double amount = input.nextDouble();
-        if(amount < 100) {
+        if (amount < 100) {
             System.out.println("Amount is too small");
             System.exit(1);
-        } else if(amount > 10_000) {
-            System.out.printf("Amount is too big. Default value %.2f was set\n",  DEFAULT_AMOUNT);
+        } else if (amount > 10_000) {
+            System.out.printf("Amount is too big. Default value %.2f was set\n", DEFAULT_AMOUNT);
             return DEFAULT_AMOUNT;
         }
         return amount;
@@ -35,11 +35,11 @@ public class Task14 {
     private static int setAndVerifyNumberOfInstallments() {
         System.out.print("Please insert number of installments: ");
         int numberOfInstallments = input.nextInt();
-        if(numberOfInstallments < 6) {
+        if (numberOfInstallments < 6) {
             System.out.println("Number of installments is too small");
             System.exit(1);
-        } else if(numberOfInstallments > 48) {
-            System.out.printf("Number of installments is too big. Default value %d was set\n",  DEFAULT_NUMBER_OF_INSTALLMENTS);
+        } else if (numberOfInstallments > 48) {
+            System.out.printf("Number of installments is too big. Default value %d was set\n", DEFAULT_NUMBER_OF_INSTALLMENTS);
             return DEFAULT_NUMBER_OF_INSTALLMENTS;
         }
         return numberOfInstallments;
@@ -47,9 +47,9 @@ public class Task14 {
 
     private static double getSingleAmountOfInstallments(int numberOfInstallments, double amount) {
         double singleAmountOfInstallment;
-        if(numberOfInstallments >= 6 && numberOfInstallments < 13) {
+        if (numberOfInstallments >= 6 && numberOfInstallments < 13) {
             singleAmountOfInstallment = calculateTotalAmountWithThreshold(FIRST_THRESHOLD, amount) / numberOfInstallments;
-        } else if(numberOfInstallments >= 13 && numberOfInstallments < 25) {
+        } else if (numberOfInstallments >= 13 && numberOfInstallments < 25) {
             singleAmountOfInstallment = calculateTotalAmountWithThreshold(SECOND_THRESHOLD, amount) / numberOfInstallments;
         } else {
             singleAmountOfInstallment = calculateTotalAmountWithThreshold(THIRD_THRESHOLD, amount) / numberOfInstallments;

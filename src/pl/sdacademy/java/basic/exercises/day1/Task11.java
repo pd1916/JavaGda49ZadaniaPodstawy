@@ -16,14 +16,14 @@ public class Task11 {
         do {
             System.out.print("Please insert digit: ");
             int chosen = input.nextInt();
-            if(randomValue == chosen) {
+            if (randomValue == chosen) {
                 isEqual = true;
                 System.out.println("Bingo!");
-            } else if(randomValue > chosen) {
+            } else if (randomValue > chosen) {
                 System.out.println("Not enough");
             } else {
                 System.out.println("Too much");
             }
-        } while(!isEqual);
+        } while (!isEqual);
     }
 }

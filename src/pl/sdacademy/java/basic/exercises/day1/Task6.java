@@ -15,13 +15,13 @@ public class Task6 {
     }
 
     private static void printMultiplicationTableBasic() {
-        for(int i = 1; i <= 4; i++) {
+        for (int i = 1; i <= 4; i++) {
             System.out.println("5 x " + i + " = " + (5 * i));
         }
     }
 
     private static void printMultiplicationTableWhileLoop(int multiplier, int minMultiplicand, int maxMultiplicand) {
-        while(minMultiplicand <= maxMultiplicand) {
+        while (minMultiplicand <= maxMultiplicand) {
             int result = multiplier * minMultiplicand;
             System.out.println(multiplier + " * " + minMultiplicand + " = " + result);
             minMultiplicand++;
@@ -48,6 +48,6 @@ public class Task6 {
             int result = multiplier * minMultiplicand;
             System.out.println(multiplier + " x " + minMultiplicand + " = " + result);
             minMultiplicand++;
-        } while(minMultiplicand <= maxMultiplicand);
+        } while (minMultiplicand <= maxMultiplicand);
     }
 }

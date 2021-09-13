@@ -26,7 +26,7 @@ public class Task5 {
 
     private static int sumOfTheSequenceWhileLoop(int firstDigit, int secondDigit) {
         int result = 0;
-        while(firstDigit <= secondDigit) {
+        while (firstDigit <= secondDigit) {
             result += firstDigit;
             firstDigit++;
         }
@@ -35,10 +35,10 @@ public class Task5 {
 
     private static int sumOfTheSequenceDoWhileLoop(int firstDigit, int secondDigit) {
         int result = 0;
-        do{
+        do {
             result += firstDigit;
             firstDigit++;
-        }while(firstDigit <= secondDigit);
+        } while (firstDigit <= secondDigit);
         return result;
     }
 }

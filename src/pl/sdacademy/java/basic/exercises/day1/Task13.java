@@ -17,15 +17,15 @@ public class Task13 {
             digit = input.nextInt();
             input.nextLine();
             totalNumber++;
-            if(digit%2 == 0) {
+            if (digit % 2 == 0) {
                 totalNumberEven++;
             }
             totalSum += digit;
-        } while(digit != 0);
+        } while (digit != 0);
 
         System.out.println("Total Number Of Digits: " + --totalNumber);
         System.out.println("Total Number Of Even Digits: " + --totalNumberEven);
-        arithmeticAverage = (float)totalSum / totalNumber;
+        arithmeticAverage = (float) totalSum / totalNumber;
         System.out.println("Arithmetic Average: " + arithmeticAverage);
     }
 }

@@ -12,7 +12,7 @@ public class Task10 {
     }
 
     private static int sumOfDigits(int number) {
-        if(number <= 9) {
+        if (number <= 9) {
             return number;
         }
         int sum = 0;

@@ -33,7 +33,7 @@ public class Task7 {
                 return firstDigit * secondDigit;
             case "/":
 //                return secondDigit != 0 ? firstDigit / secondDigit : 0;
-                if(secondDigit == 0) {
+                if (secondDigit == 0) {
                     System.out.println("ERROR");
                     System.exit(1);
                 }
@@ -41,7 +41,7 @@ public class Task7 {
             case "^":
                 return (float) Math.pow(firstDigit, secondDigit);
             case "sqrt":
-                return (float)Math.pow(firstDigit, 1/secondDigit);
+                return (float) Math.pow(firstDigit, 1 / secondDigit);
             default:
                 System.out.println("Operator not exist");
                 System.exit(1);

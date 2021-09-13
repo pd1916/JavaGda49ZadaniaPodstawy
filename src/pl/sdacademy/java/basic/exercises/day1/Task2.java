@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Task2 {
     //private static final float PI = 3.14F;
-    private static final float PI = (float)Math.PI;
+    private static final float PI = (float) Math.PI;
 
     public static void main(String[] args) {
         float radius = getDiameterFromUser() / 2;
@@ -23,7 +23,7 @@ public class Task2 {
 
     private static float calculateAreaOfACircle(float radius) {
         // pi *r^2
-        return  PI * radius * radius;
+        return PI * radius * radius;
     }
 
     private static float calculateCircumferenceOfACircle(float radius) {
@@ -37,7 +37,7 @@ public class Task2 {
         try {
             System.out.print("Please insert diameter: ");
             diameter = scanner.nextFloat();
-        } catch(InputMismatchException ex) {
+        } catch (InputMismatchException ex) {
             System.out.println("Please insert only digits!");
             System.exit(1);
         }

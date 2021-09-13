@@ -30,12 +30,12 @@ public class Task3 {
     }
 
     private static void methodForPointC(int firstDigit, int secondDigit) {
-        boolean resultPointC = (++firstDigit > secondDigit++) && (--firstDigit < secondDigit++) ;
+        boolean resultPointC = (++firstDigit > secondDigit++) && (--firstDigit < secondDigit++);
         System.out.println("pointC: " + resultPointC);
     }
 
     private static void methodForPointD(int firstDigit, int secondDigit) {
-        boolean resultPointD =  (firstDigit * secondDigit) % 2 == 0;
+        boolean resultPointD = (firstDigit * secondDigit) % 2 == 0;
         System.out.println("pointD: " + resultPointD);
     }
 }

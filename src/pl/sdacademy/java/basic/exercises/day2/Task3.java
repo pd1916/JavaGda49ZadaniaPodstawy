@@ -1,4 +1,4 @@
-package pl.sdacademy.java.basic.exercises.day2.day2;
+package pl.sdacademy.java.basic.exercises.day2;
 
 public class Task3 {
 
@@ -7,11 +7,14 @@ public class Task3 {
         String word = "ma";
         int pos = getIndex(input, word);
         System.out.println(getIndex(input, word));
-
     }
 
     private static int getIndex(String input, String word) {
-        return (input != null && !input.isBlank() && input.contains(word)) ? input.indexOf(word) : -1;
+        //return (input != null && !input.isBlank() && input.contains(word)) ? input.indexOf(word) : -1;
         //return input.contains(word) ? input.indexOf(word) : -1;
+        if (word != null && !word.isBlank()) {
+            return input.contains(word) ? input.indexOf(word) : -1;
+        }
+        return -1;
     }
 }

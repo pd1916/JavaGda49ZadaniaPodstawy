@@ -1,6 +1,4 @@
-package pl.sdacademy.java.basic.exercises.day2.day2;
-
-import java.util.Arrays;
+package pl.sdacademy.java.basic.exercises.day2;
 
 public class Task13 {
 
@@ -14,8 +12,8 @@ public class Task13 {
     private static int getMinValue(int[] inputs) {
         int minValue = inputs[0];
         //int minValue = Integer.MAX_VALUE;
-        for(int i : inputs) {
-            if(i < minValue) {
+        for (int i : inputs) {
+            if (i < minValue) {
                 minValue = i;
             }
         }
@@ -25,8 +23,8 @@ public class Task13 {
     private static int getMaxValue(int[] inputs) {
         //return Arrays.stream(inputs).max().getAsInt();
         int maxValue = inputs[0];
-        for(int i : inputs) {
-            if(i > maxValue) {
+        for (int i : inputs) {
+            if (i > maxValue) {
                 maxValue = i;
             }
         }
@@ -36,7 +34,7 @@ public class Task13 {
     private static int sum(int[] inputs) {
         //return Arrays.stream(inputs).sum();
         int sum = 0;
-        for(int i : inputs) {
+        for (int i : inputs) {
             sum += i;
         }
         return sum;
