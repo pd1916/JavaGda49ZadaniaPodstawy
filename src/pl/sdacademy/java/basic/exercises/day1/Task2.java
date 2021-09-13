@@ -38,7 +38,7 @@ public class Task2 {
             System.out.print("Please insert diameter: ");
             diameter = scanner.nextFloat();
         } catch(InputMismatchException ex) {
-            System.out.println("Please instert only digits!");
+            System.out.println("Please insert only digits!");
             System.exit(1);
         }
         return diameter;

@@ -8,7 +8,6 @@ public class Task10 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please insert first digit: ");
         int number = scanner.nextInt();
-
         System.out.println(sumOfDigits(number));
     }
 
@@ -16,7 +15,6 @@ public class Task10 {
         if(number <= 9) {
             return number;
         }
-
         int sum = 0;
         do {
             sum += number % 10;
