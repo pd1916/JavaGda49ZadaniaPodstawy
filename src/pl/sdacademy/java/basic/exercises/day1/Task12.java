@@ -14,7 +14,7 @@ public class Task12 {
     }
 
     private static int ownModuloImplementation(int a, int b) {
-        return ((a < b) ? a : 0);
+        return a - (a / b) * b;
     }
 
     private static boolean ifOwnModuloImplementationIsCorrect(int a, int b) {
