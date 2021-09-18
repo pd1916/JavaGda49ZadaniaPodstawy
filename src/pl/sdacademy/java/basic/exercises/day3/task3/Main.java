@@ -1,4 +1,4 @@
-package pl.sdacademy.java.basic.exercises.day3.Task3;
+package pl.sdacademy.java.basic.exercises.day3.task3;
 
 public class Main {
 

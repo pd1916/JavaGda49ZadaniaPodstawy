@@ -1,4 +1,4 @@
-package pl.sdacademy.java.basic.exercises.day3.Task3;
+package pl.sdacademy.java.basic.exercises.day3.task3;
 
 public class Order {
     private int currentOrderItemCounter;
@@ -54,5 +54,4 @@ public class Order {
         System.out.println("Total amount: " + getTotalAmount());
         System.out.println("Count: " + getItemsCount());
     }
-
 }

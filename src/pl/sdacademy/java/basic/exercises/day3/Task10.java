@@ -1,7 +1,6 @@
 package pl.sdacademy.java.basic.exercises.day3;
 
 import java.time.Duration;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Scanner;
 
